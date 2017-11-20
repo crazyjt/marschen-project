@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--前四个属性表示起始和终止位置的坐标
+         1、值为50表示绝对位置定位
+         2、值为50%表示相对于控件本身定位
+         3、值为50%p表示相对于父控件定位-->
+    <translate
+        android:fromXDelta="0%"
+        android:toXDelta="100%"
+        android:fromYDelta="0%"
+        android:toYDelta="100%"
+        android:duration="2000"/>
+</set>

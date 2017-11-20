@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.marstest">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".UserLocation.UserLocationTest">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".IntentExtra01" android:label="IntentExtra01" android:theme="@android:style/Theme.Dialog"/>
+        <provider
+            android:authorities="com.example.marstest.ContentProvider.FirstContentProvider"
+            android:name=".ContentProvider.FirstContentProvider"/>
+        <!--注册广播-->
+        <receiver android:name=".TestReceiver">
+            <intent-filter>
+                <!--action标签的内容决定此BroadCastReceiver的子类对什么消息做出回应-->
+                <action android:name="android.intent.action.EDIT"/>
+            </intent-filter>
+        </receiver>
+        <!--注册AppWidgetProvider-->
+        <receiver android:name=".AppWidgetProviderTest">
+            <intent-filter>
+                <!--action标签的内容决定此AppWidgetProvider的子类对什么消息做出回应-->
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <intent-filter>
+                <!--自定义的广播-->
+                <action android:name="marstest.appwidget.UPDATE_APP_WIDGET"/>
+            </intent-filter>
+            <!--元数据，resource的值是res文件下的xml文件下的xml文件-->
+            <meta-data android:name="android.appwidget.provider"
+                android:resource="@xml/example_appwidget_info"/>
+        </receiver>
+
+        <!--注册service-->
+        <service android:name=".service.ServiceTest"></service>
+        <service android:name=".service.ServiceTest02"></service>
+        <service android:name=".service.ServiceTest03"></service>
+
+    </application>
+    <!--访问网络权限-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!--访问SD卡权限-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!--短信接收权限-->
+    <uses-permission android:name="android.permission.RECEIVE_SMS"></uses-permission>
+    <!--访问和修改wifi网卡权限-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <!--访问和修改蓝牙权限-->
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <!--访问定位权限-->
+    <!--精准定位权限（GPS）-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!--信号接收塔定位（NETWORK）-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+</manifest>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/btnCreatedb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_createdb"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/btnUpdatedb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_updatedb"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/btnClosedb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_closedb"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/btnInstert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_insert"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_update"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/btnSelect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_select"
+        android:textAllCaps="false"/>
+</LinearLayout>

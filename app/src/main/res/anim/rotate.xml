@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--pivoteX和pivoteY分别表示旋转的中心位置的X坐标和Y坐标
+        1、值为50表示绝对位置定位
+        2、值为50%表示相对于控件本身定位
+        3、值为50%p表示相对于父控件定位-->
+    <rotate
+        android:fromDegrees="0"
+        android:toDegrees="+360"
+        android:pivotX="50%p"
+        android:pivotY="50%p"
+        android:duration="3000"/>
+</set>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/btnReceiver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_receiver"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/btnSMSReceiverBind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_smsreceiverbind"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/btnSMSReceiverUnbind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_smsreceiverunbind"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/btnSendSMS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_sendsms"
+        android:textAllCaps="false"/>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--delay间隔时间，单位s
+    animationOrder动画排序方式
+    animation动画设置的xml文件-->
+<layoutAnimation xmlns:android="http://schemas.android.com/apk/res/android"
+    android:delay="1"
+    android:animationOrder="normal"
+    android:animation="@anim/list_anim"/>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnUserLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_userlocation"/>
+    <Button
+        android:id="@+id/btnBestProvider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_bestprovider"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/btnGeocoding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_geocoding"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/btnReverseGeocoding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_reversegeocoding"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btnUserLocationByHttp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_userlocationbyhttp"
+        android:textAllCaps="false"/>
+</LinearLayout>
